@@ -14,4 +14,4 @@ This repo expects/creates a `./data` folder which contains data and intermediate
 All the basic inputs/intermediates used in these notebook are provided on a separate Google Drive folder [here](https://drive.google.com/drive/folders/1ORpfjjJTjaTWUFI6DquHMQhqIT8v9k2B?usp=sharing). This includes a pickled version of the pickled SVC/sklearn model and a .pth file from the trained RoBERTA model. Note that version 1.2.2 of sklearn was used for this (see requirements.txt) 
 
 ## Original Project
-To reduce redundancy/ambiguity, the original copy of my COMP_SCI 349 (Machine Learning) final has been privated. The PDF write-up I submitted for that project has been provided in `./OLD_COMP_SCI_349_NK_Final.pdf` if you're curious to see how the data looked back then.
+To reduce redundancy/ambiguity, the original copy of my COMP_SCI 349 (Machine Learning) final has been privated. The PDF write-up I submitted for that project has been provided in `./OLD_COMP_SCI_349_NK_Final.pdf` if you're curious to compare performance then vs now (in short, F1 macro score increased from .79 to around .88)
