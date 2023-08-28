@@ -18,4 +18,4 @@ To reduce redundancy/ambiguity, the original copy of my COMP_SCI 349 (Machine Le
 
 ## EDA Highlights
 Notably, class imbalance is vast within this dataset, hence the use of a custom, weighted sampler in the fitting of the RoBERTA model/calculating model loss and the use of balanced class weighting by the SVC models for bag of words.
-![Class Frequencies](.,/../eda/doc_submission_metrics/flair_frequency_bar.pdf)
+![Class Frequencies](.,/../eda/flair_frequency_bar.png)
