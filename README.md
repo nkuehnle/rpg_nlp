@@ -18,4 +18,7 @@ To reduce redundancy/ambiguity, the original copy of my COMP_SCI 349 (Machine Le
 
 ## EDA Highlights
 Notably, class imbalance is vast within this dataset, hence the use of a custom, weighted sampler in the fitting of the RoBERTA model/calculating model loss and the use of balanced class weighting by the SVC models for bag of words.
-<img src="https://raw.githubusercontent.com/nkuehnle/rpg_nlp/main/eda/flair_frequency_bar.png" width="50%" height="50%">
+<img src="https://raw.githubusercontent.com/nkuehnle/rpg_nlp/main/eda/flair_frequency_bar.png" width="66%" height="66%">
+
+There is very limited class-based separation in the first few PCs of these data, but based on UMAP projections of simple TF-IDF bag of words vectors, the classes already separate nicely, thus I expected that alorithms that many non-linear algorithms will work will.
+<img src="https://raw.githubusercontent.com/nkuehnle/rpg_nlp/main/eda/TF-IDF_Doc_EDA_DIR_Submission_Flair_UMAP.png" width="66%" height="66%">
