@@ -45,7 +45,7 @@ As noted above, there are many instanced of mislabeled content when relying on R
 ### Class Imabalance
 Notably, class/label imbalance is vast within this dataset, hence the use of a custom, weighted sampler in the fitting of the RoBERTA model/calculating model loss and the use of balanced class/label weighting by the SVC models for bag of words.
 
-<img src="https://raw.githubusercontent.com/nkuehnle/rpg_nlp/main/eda/flair_frequency_bar.png" width="66%" height="66%">
+<img src="https://raw.githubusercontent.com/nkuehnle/rpg_nlp/main/eda/flair_frequency_bar.png" width="50%" height="50">
 
 ### Word Usage By Class Label
 In general, there seem to be a few highly over-represented or under-represented terms per label class relative to all of the others.
