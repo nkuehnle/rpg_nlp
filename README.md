@@ -20,7 +20,7 @@ To reduce redundancy/ambiguity, the original copy of my COMP_SCI 349 (Machine Le
 There are 9 notebooks organized into three parts.
 
 ### Part 1 (4 notebooks)
-This part is entirely devoted to integrating new and old data together, filtering out redundant or irrelevant content, collecting and cleaning text from the web, and identifying improperly labeled content and fixing it.
+This part is entirely devoted to integrating new and old data together, filtering out redundant or irrelevant content, collecting and cleaning text from the web, and identifying improperly labeled content and [fixing it](#label-annotation-cli-tool).
 I recommend skipping over these notebooks, they behave a bit oddly, in particular because the initial dataset was collected in a dirtier manner than follow-up collections since the first collection was done as part of a short one weekend project for a class final.
 
 ### Part 2 (3 notebooks)
@@ -32,10 +32,10 @@ This part is devoted to exploratory data analysis on three different levels/scop
 A few figures, mainly from the third notebook in Part 2 are highlighted in the [EDA Highlights](#eda-highlights) section.
 
 ### Part 3 (2 notebooks)
-In this part I fit two types of models to the data as either a BoW (SVC-based) model or sequence classifier (RoBERTA) task. Both peak out at around a F1 of .9, which appears to be in part because only a small portion of the class labels have been manually reviewed and sometimes the Reddit dataset is mislabeled for a number of reasons (partly explored in Part 1).  On top of this, my current labels only allow for one class to be assigned when in fact the task is really a multi-
+In this part I fit two types of models to the data as either a BoW (SVC-based) model or sequence classifier (RoBERTA) task. Both peak out at around a F1 of .9, which appears to be in part because only a small portion of the class labels have been manually reviewed and sometimes the Reddit dataset is mislabeled for a number of reasons (partly explored in Part 1 and [discussed below](#label-annotation-cli-tool).  On top of this, my current labels only allow for one class to be assigned when in fact the task is really a multi-
 label/multi-class one, with a fairly substantial number of texts likely including more than one valid label. However, for an initial demonstration project, this is satisfactory to me for now.
 
-### Label/Annotation CLI Tool
+### Label Annotation CLI Tool
 As noted above, there are many instanced of mislabeled content when relying on Reddit flair. For this reason, I developed a small CLI tool for reviewing and updating labels manually, which is used in Part 1 to catch/review around 10% of labels which are at a high risk for being mislabeled. For improved performance, it may be necessary to employ further until the labels can all be trusted.
 <img src="https://raw.githubusercontent.com/nkuehnle/rpg_nlp/main/cli_gui.png" width="150%" height="150%">
 
