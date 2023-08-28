@@ -7,7 +7,7 @@ A list of Reddit posts (comments or primary submissions) containing links two we
 
 4-5k Reddit posts were eventually collected (the initial dataset was close to 2.5-3K at the time of my COMP SCI final). Out of these, around 3K unique pieces of fan-made content were eventually obtained.
 
-Overall, it's worth noting that class-imbalance is heavy within this dataset (see [EDA Highlights](#EDA Highlights) below), so weighted sampling/training methods are utilized in Part 3 for model fitting.
+Overall, it's worth noting that class-imbalance is heavy within this dataset (see [EDA Highlights](#eda-highlights) below), so weighted sampling/training methods are utilized in Part 3 for model fitting.
 
 ### Data / Model Availability
 This repo expects/creates a `./data` folder which contains data and intermediates for different stages. The final size of this folder, with all check-points is around 1.7 GB, so it is not provided here.
@@ -17,3 +17,5 @@ All the basic inputs/intermediates used in these notebook are provided on a sepa
 To reduce redundancy/ambiguity, the original copy of my COMP_SCI 349 (Machine Learning) final has been privated. The PDF write-up I submitted for that project has been provided in `./OLD_COMP_SCI_349_NK_Final.pdf` if you're curious to compare performance then vs now (in short, F1 macro score increased from .79 to around .88)
 
 ## EDA Highlights
+Notably, class imbalance is vast within this dataset, hence the use of a custom, weighted sampler in the fitting of the RoBERTA model/calculating model loss and the use of balanced class weighting by the SVC models for bag of words.
+![Class Frequencies](../eda/doc_submission_metrics/flair_frequency_bar.pdf)
