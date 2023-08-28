@@ -37,7 +37,7 @@ label/multi-class one, with a fairly substantial number of texts likely includin
 
 ### Label/Annotation CLI Tool
 As noted above, there are many instanced of mislabeled content when relying on Reddit flair. For this reason, I developed a small CLI tool for reviewing and updating labels manually, which is used in Part 1 to catch/review around 10% of labels which are at a high risk for being mislabeled. For improved performance, it may be necessary to employ further until the labels can all be trusted.
-<img src="https://raw.githubusercontent.com/nkuehnle/rpg_nlp/main/cli_gui.png" width="66%" height="66%">
+<img src="https://raw.githubusercontent.com/nkuehnle/rpg_nlp/main/cli_gui.png" width="80%" height="80%">
 
 
 ## EDA Highligts
@@ -45,7 +45,7 @@ As noted above, there are many instanced of mislabeled content when relying on R
 ### Class Imabalance
 Notably, class/label imbalance is vast within this dataset, hence the use of a custom, weighted sampler in the fitting of the RoBERTA model/calculating model loss and the use of balanced class/label weighting by the SVC models for bag of words.
 
-<img src="https://raw.githubusercontent.com/nkuehnle/rpg_nlp/main/eda/flair_frequency_bar.png" width="50%" height="50">
+<img src="https://raw.githubusercontent.com/nkuehnle/rpg_nlp/main/eda/flair_frequency_bar.png" width="66%" height="66%">
 
 ### Word Usage By Class Label
 In general, there seem to be a few highly over-represented or under-represented terms per label class relative to all of the others.
