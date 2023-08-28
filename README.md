@@ -1,4 +1,4 @@
-# Predicting content labels for fan-made roleplaying game (RPG) content
+# Labeling Fan-Generated Roleplaying Game (RPG) Content: An NLP Task
 This project began as a single weekend project completed for my COMP_SCI 349 (Machine Learning) course at Northwestern University.
 Students were offered the choice of a number of fixed toy datasets and tasks to complete. I chose to perform multi-label classification based on a custom-generated dataset.
 
