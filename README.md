@@ -37,7 +37,7 @@ label/multi-class one, with a fairly substantial number of texts likely includin
 
 ### Label/Annotation CLI Tool
 As noted above, there are many instanced of mislabeled content when relying on Reddit flair. For this reason, I developed a small CLI tool for reviewing and updating labels manually, which is used in Part 1 to catch/review around 10% of labels which are at a high risk for being mislabeled. For improved performance, it may be necessary to employ further until the labels can all be trusted.
-<img src="https://raw.githubusercontent.com/nkuehnle/rpg_nlp/main/eda/cli_gui.png" width="66%" height="66%">
+<img src="https://raw.githubusercontent.com/nkuehnle/rpg_nlp/main/cli_gui.png" width="66%" height="66%">
 
 
 ## EDA Highligts
