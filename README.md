@@ -60,6 +60,6 @@ Here are a few of these visualized by both barplot and word cloud:
 
 ### Visualizing Class Separation by TF-IDF
 
-There is very limited class-based separation in the first few PCs of these data, but based on UMAP projections of simple TF-IDF bag of words vectors, the classes already separate nicely, thus I expected that alorithms that many non-linear algorithms will work will for this classification task.
+There is very limited class-based separation in the first few PCs of these data, but based on UMAP projections of simple TF-IDF bag of words vectors, the classes already separate nicely, thus I expected that many simple non-linear algorithms will work will quite well for this classification task.
 
 <img src="https://raw.githubusercontent.com/nkuehnle/rpg_nlp/main/eda/TF-IDF_Doc_EDA_DIR_Submission_Flair_UMAP.png" width="66%" height="66%">
